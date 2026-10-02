@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+const [databaseId,domain]=process.argv.slice(2);
+if(!databaseId||!domain||domain.includes('://'))throw new Error('Pemakaian: node ../migration/prepare-cloudflare.mjs ID_DATABASE karier.domainanda.id (jalankan dari folder source)');
+const path='dist/server/wrangler.json';
+if(!fs.existsSync(path))throw new Error('Jalankan npm run build terlebih dahulu.');
+const config=JSON.parse(fs.readFileSync(path,'utf8'));
+config.name='karier';
+config.d1_databases=[{binding:'DB',database_name:'karier-db',database_id:databaseId}];
+config.routes=[{pattern:domain,custom_domain:true}];config.workers_dev=false;
+fs.writeFileSync(path,JSON.stringify(config,null,2));
+fs.writeFileSync('wrangler.migration.json',JSON.stringify({name:'karier',compatibility_date:'2026-09-01',d1_databases:config.d1_databases},null,2));
+console.log('Konfigurasi siap untuk database dan domain yang diberikan.');

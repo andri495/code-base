@@ -1,0 +1,41 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1790428081048,
+      "tag": "0000_noisy_scarlet_spider",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1790429378075,
+      "tag": "0001_windy_franklin_richards",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1790430535455,
+      "tag": "0002_record-sutisna-loan",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1790430912358,
+      "tag": "0003_correct-loan-dates-and-makwo",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1790431993914,
+      "tag": "0004_correct-imam-dana",
+      "breakpoints": true
+    }
+  ]
+}

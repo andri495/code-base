@@ -1,0 +1,22 @@
+{
+  "captured_at_utc": "2026-10-02T05:56:29.802851+00:00",
+  "rows": {
+    "residents": 39,
+    "payments": 25,
+    "entries": 15,
+    "loans": 0,
+    "repayments": 0,
+    "transfers": 2
+  },
+  "balances": {
+    "cash": 284500,
+    "DANA": 60000,
+    "OVO": 0,
+    "GoPay": 0,
+    "bank": 0,
+    "other": 225000
+  },
+  "total_cash": 569500,
+  "source_commit": "e05d086bffc93da05c9d83f87d0d543fe9780146",
+  "sql_restore_verified": true
+}
